@@ -1,0 +1,5 @@
+name: CraftAttack
+version: 1.0
+main: de.blox.core.Core
+commands:
+  status:
