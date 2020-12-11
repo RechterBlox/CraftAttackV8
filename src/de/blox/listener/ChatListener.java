@@ -19,7 +19,7 @@ public class ChatListener implements Listener {
         File file = new File("plugins/CraftAttack/status");
         FileConfiguration cfg = YamlConfiguration.loadConfiguration(file);
         String status = (String) cfg.get(player.getUniqueId().toString()); 
-        event.setFormat(switch (day) //Java 12 switch expr
+        event.setFormat(switch (status) //Java 12 switch expr
         {
             case "djane" -> "§f§l[§d§lDJANE§f§l]§f<";
             case "lost" -> "§f§l[§1§lLOST§f§l]§f<";
